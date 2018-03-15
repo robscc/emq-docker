@@ -113,4 +113,5 @@ VOLUME ["/opt/emqttd/log", "/opt/emqttd/data", "/opt/emqttd/lib", "/opt/emqttd/e
 # - 18083 for dashboard
 # - 4369 for port mapping
 # - 6000-6999 for distributed node
+COPY ./etc/acl.conf /opt/emqttd/etc/acl.conf
 EXPOSE 1883 8883 8083 8084 8080 18083 4369 6000-6999
